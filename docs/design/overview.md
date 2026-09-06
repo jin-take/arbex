@@ -570,6 +570,19 @@ PRの行コメントやこの会話でD番号を指定して議論し、結論�
 
 新しい設計の中心は、外部LP capabilityと正規化、合成板、接続先別予約、SOR、OMS、SingleLegExecutor、Exposure/Recovery、障害再生、UIである。関連IssueはPRとロードマップ#1から追跡する。設計Issue#2はレビュー完了までcloseしない。
 
+### 追加Issue
+
+| Issue | 内容 |
+| --- | --- |
+| [#34](https://github.com/jin-take/arbex/issues/34) | [P0][M1][Liquidity] 外部LP adapterとDeFiを正規化して合成板を構築する |
+| [#35](https://github.com/jin-take/arbex/issues/35) | [P0][M1][Inventory] 接続先別の在庫・資金予約・再配置状態を管理する |
+| [#36](https://github.com/jin-take/arbex/issues/36) | [P0][M2][Router] 在庫制約付きSORとatomic/non-atomic発注計画を実装する |
+| [#37](https://github.com/jin-take/arbex/issues/37) | [P0][M3][OMS] LP子注文・部分約定・取消競合・応答不明を照合する |
+| [#38](https://github.com/jin-take/arbex/issues/38) | [P0][M3][Contract] LP連携用SingleLegExecutorをatomic裁定から分離する |
+| [#39](https://github.com/jin-take/arbex/issues/39) | [P0][M3][Recovery] 未約定側のExposure・ヘッジ・unwind・手動介入を実装する |
+| [#40](https://github.com/jin-take/arbex/issues/40) | [P0][M3][Validation] LP・DeFi混在の障害リプレイと受入検証を整備する |
+| [#41](https://github.com/jin-take/arbex/issues/41) | [P0][M3][UI] 合成板・接続先在庫・注文・回復状況を監視画面へ反映する |
+
 ## 23. 参考資料と確認境界
 
 以下はadapter要件を考えるための一次資料。特定接続先の採用決定や、他LPにも同じ保証があるという意味ではない。実装時には採用API/version/権限を再確認する。
