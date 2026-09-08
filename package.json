@@ -1,0 +1,11 @@
+{
+  "name": "arbex",
+  "private": true,
+  "packageManager": "pnpm@10.15.1",
+  "scripts": {
+    "web:dev": "pnpm --filter @arbex/web dev",
+    "web:build": "pnpm --filter @arbex/web build",
+    "web:lint": "pnpm --filter @arbex/web lint",
+    "web:typecheck": "pnpm --filter @arbex/web typecheck"
+  }
+}
